@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biryani Beast | Savor the Majesty of Flavor</title>
 
+    <!-- Bootstrap Icons CSS -->
+    <link href="./node_modules/bootstrap-icons/" rel="stylesheet" />
+
     <!-- Custom styles -->
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <header class="header text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark p-5">
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.svg" alt="Logo" width="60">
+                    <img src="./assets/logo.svg" alt="Logo" width="60" />
                 </a>
         
                 <!-- Toggler Button (for small screens) -->
@@ -24,15 +27,28 @@
         
                 <!-- Nav Links -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav align-items-lg-center gap-lg-5 gap-custom">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="btn btn-secondary btn-custom">
+                                <i class="bi bi-bag-check-fill"></i> &nbsp;
+                                ORDER NOW
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -40,11 +56,26 @@
         </nav>
         <!-- End of Navbar -->
 
-        
+        <section class="container d-flex flex-column justify-content-center align-items-center hero">
+            <h1 class="text-title">Biryani Beast</h1>
+
+            <p>Experience the Rich Flavors of Authentic Biryani Delight..!</p>
+
+            <div class="d-flex gap-5" role="group" aria-label="Button group">
+                <button class="btn btn-outline-primary btn-custom">
+                    <i class="bi bi-binoculars-fill"></i> &nbsp;
+                    EXPLORE NOW
+                </button>
+                
+                <button class="btn btn-secondary btn-custom">
+                    <i class="bi bi-bag-check-fill"></i> &nbsp;
+                    ORDER NOW
+                </button>
+            </div>
+        </section>
+        <!-- End of Hero -->
     </header>
     <!-- End of Header -->
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, numquam!</p>
 
     <!-- Include Bootstrap JS (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -1,16 +1,76 @@
+html {
+    font-size: 62.5%;
+}
+
+// color variables
 $primary: #F69431;
 $secondary: #5D310C;
 
+// font variables
+$font-regular: "Inter", sans-serif;
+$font-accent: 'Crete Round', serif;
+
+// spacing variables
+$btn-border-radius: 0;
+
+// text size variables
+$text-small: 1rem;
+
+// ALL THE OVERRIDES AND CUSTOM STYLES WRT BOOTSTRAP MUST BE MENTIONED ABOVE THESE IMPORTS
 // Import Bootstrap and its variables
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@100;400;700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;400;700&display=swap');
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-// Your custom styles
+
+//***** base styles
 body {
-  background-color: $primary;
-  font-family: "Alfa Slab One";
+  font-family: $font-regular;
+  font-size: 1.5rem;
 }
 
-p {
-    font-family: "Inter";
+a {
+    font-weight: 700;
+}
+
+//***** utility classes
+.btn-custom {
+    padding: 1rem 2.5rem;
+    margin: 1rem 0;
+    transition: all .3s ease-in-out;
+    font-family: $font-accent;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.text-title {
+    font-size: 5rem;
+    font-family: $font-accent;
+}
+
+/**************** CUSTOM STYLE SHEET ****************/
+
+//***** header styles
+.header {
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#252525, 0.85),
+        rgba(#0e0e0e, 0.85)),
+    url("../assets/hero-bg.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+//***** navbar styles
+.navbar a {
+    font-family: $font-accent;
+}
+
+//***** hero styles
+.hero {
+    margin-top: 20vh;
+    text-align: center;
 }
