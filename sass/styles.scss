@@ -5,6 +5,8 @@ html {
 // color variables
 $primary: #F69431;
 $secondary: #5D310C;
+$lighter-dark: #292c30;
+
 
 // font variables
 $font-regular: "Inter", sans-serif;
@@ -22,7 +24,6 @@ $text-small: 1rem;
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;400;700&display=swap');
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-
 //***** base styles
 body {
   font-family: $font-regular;
@@ -31,6 +32,33 @@ body {
 
 a {
     font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+.section {
+    padding: 10vh 0 !important;
+    
+    &-heading {
+        font-size: 3rem;
+        color: $primary;
+        margin-bottom: 2.5rem;
+    }
+
+    &-subheading {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}
+
+.card {
+    border: none;
+
+    &-body {
+        border-radius: 0;
+    }
 }
 
 //***** utility classes
@@ -45,10 +73,33 @@ a {
     }
 }
 
+.btn-full-width {
+    width: 100%;
+}
+
+.link {
+    padding: .5rem 0 .25rem;
+    font-family: $font-accent;
+    font-weight: 400;
+    text-decoration: none;
+
+    &-primary {
+        border-bottom: 2px solid $primary;
+    }
+}
+
 .text-title {
     font-size: 5rem;
+}
+
+.text-accent {
     font-family: $font-accent;
 }
+
+.text-color-primary {
+    color: $primary;
+}
+
 
 /**************** CUSTOM STYLE SHEET ****************/
 
@@ -73,4 +124,12 @@ a {
 .hero {
     margin-top: 20vh;
     text-align: center;
+}
+
+//***** about styles
+
+
+//***** menu styles
+.menu {
+    background-color: $lighter-dark;
 }
