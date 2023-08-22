@@ -45,7 +45,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <button class="btn btn-secondary btn-custom">
+                            <button class="btn btn-secondary btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="bi bi-bag-check-fill"></i> &nbsp;
                                 ORDER NOW
                             </button>
@@ -62,12 +62,12 @@
             <p>Experience the Rich Flavors of Authentic Biryani Delight..!</p>
 
             <div class="d-flex gap-5" role="group" aria-label="Button group">
-                <button class="btn btn-outline-primary btn-custom">
+                <a class="btn btn-outline-primary btn-custom" href="#menu">
                     <i class="bi bi-binoculars-fill"></i> &nbsp;
                     EXPLORE NOW
-                </button>
+                </a>
                 
-                <button class="btn btn-secondary btn-custom">
+                <button class="btn btn-secondary btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="bi bi-bag-check-fill"></i> &nbsp;
                     ORDER NOW
                 </button>
@@ -99,7 +99,7 @@
                         </p>
 
                         <div class="d-flex gap-5 justify-content-center justify-content-lg-start my-4">
-                            <a href="#" class="link link-primary">
+                            <a href="#" class="link link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="bi bi-bag-check"></i> &nbsp;
                                 Order Now
                             </a>
@@ -172,7 +172,7 @@
                                     </li>
                                 </ul>
 
-                                <button class="btn btn-secondary btn-full-width btn-custom">
+                                <button class="btn btn-secondary btn-full-width btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <i class="bi bi-bag-check-fill"></i> &nbsp;
                                     ORDER NOW
                                 </button>
@@ -231,7 +231,7 @@
                                     </li>
                                 </ul>
 
-                                <button class="btn btn-secondary btn-full-width btn-custom">
+                                <button class="btn btn-secondary btn-full-width btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <i class="bi bi-bag-check-fill"></i> &nbsp;
                                     ORDER NOW
                                 </button>
@@ -285,12 +285,12 @@
                                     <li class="my-4">
                                         <p>
                                             <i class="bi bi-check-circle text-color-primary"></i> &nbsp;
-                                            Creative Ingredient Combinations
+                                            Creative Combinations
                                         </p>
                                     </li>
                                 </ul>
 
-                                <button class="btn btn-secondary btn-full-width btn-custom">
+                                <button class="btn btn-secondary btn-full-width btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <i class="bi bi-bag-check-fill"></i> &nbsp;
                                     ORDER NOW
                                 </button>
@@ -302,8 +302,189 @@
             <!-- End of Container -->
         </section>
         <!-- End of Menu -->
+
+        <section class="section reviews" id="reviews">
+            <div class="container"> 
+                <h2 class="text-center my-5 section-heading text-accent">Reviews</h2>
+
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/review-slider-img-1.jpg" class="d-block w-100" alt="Image 1">
+
+                            <div class="carousel-caption d-none d-lg-block">
+                                <p>The biryanis at Biryani Beast are a true treat for the taste buds. Each bite is bursting with flavors that transport me to a world of culinary delight. A must-visit for any biryani enthusiast!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/review-slider-img-2.jpg" class="d-block w-100" alt="Image 2">
+
+                            <div class="carousel-caption d-none d-lg-block">
+                                <p>Biryani Beast offers biryanis that are a culinary masterpiece. The combination of tender meat, aromatic spices, and fragrant rice creates an experience that's nothing short of heavenly. My taste buds have found their happy place.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/review-slider-img-3.jpg" class="d-block w-100" alt="Image 3">
+
+                            <div class="carousel-caption d-none d-lg-block">
+                                <p>Biryani Beast never fails to impress with its biryani offerings. The blend of traditional spices and modern twists in their recipes results in flavors that amaze and leave me craving for more. A feast for both the palate and the soul.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- End of Container -->
+        </section>
+        <!-- End of Reviews -->
+
+        <section class="section contact" id="contact">
+            <div class="container"> 
+                <h2 class="text-center my-5 section-heading text-accent">Contact Us</h2>
+
+                <div class="row g-5 contact-content">
+                    <div class="col-lg-6">
+                        <img src="./assets/contact-us.jpg" alt="About Us" class="img-fluid" />
+                    </div>
+
+                    <form class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail" class="form-label">Email address</label>
+                          <input type="email" class="form-control bg-dark text-light" id="exampleInputEmail" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputName" class="form-label">Name</label>
+                          <input type="text" class="form-control bg-dark text-light" id="exampleInputName">
+                        </div>
+
+                        <div class="mb-3 form-floating">
+                            <textarea class="form-control bg-dark text-light" style="height: 14rem;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Can you take a call?</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full-width text-accent">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End of Container -->
+        </section>
+        <!-- End of Contact -->
+
+        <section class="section cta">
+            <h2 class="text-center my-5 section-heading text-accent">Savor the Flavor Today!</h2>
+
+            <div class="d-flex justify-content-center gap-5" role="group" aria-label="Button group">
+                <a class="btn btn-outline-primary btn-custom" href="#menu">
+                    <i class="bi bi-binoculars-fill"></i> &nbsp;
+                    VIEW MENU
+                </a>
+                
+                <button class="btn btn-secondary btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-bag-check-fill"></i> &nbsp;
+                    ORDER NOW
+                </button>
+            </div>
+        </section>
+        <!-- End of CTA -->
     </main>
     <!-- End of Main -->
+
+    <footer class="footer bg-primary text-center py-5">
+        <p>Made with <i class="bi bi-heart-fill text-color-secondary"></i> by Selviraja Pasagadugula</p>
+
+        <div class="d-flex gap-5 d-flex justify-content-center">
+            <a href="#">
+                <i class="bi bi-envelope text-dark"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-instagram text-dark"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-whatsapp text-dark"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Place Order Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5 text-accent" id="exampleModalLabel">ORDER WINDOW</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center p-5">
+                <img class="mb-5" width="200" src="./assets/logo-with-black-text.svg" alt="logo image" />
+
+                <div class="dropdown">
+                    <span>
+                        <p>Biryani Category</p>
+                    </span>
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select Biryani Category
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Chicken Biryani</a></li>
+                      <li><a class="dropdown-item" href="#">Mutton Biryani</a></li>
+                      <li><a class="dropdown-item" href="#">Vegetarian Biryani</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <span>
+                        <p>Biryani Variety</p>
+                    </span>
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select Biryani Category
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <!-- Chicken Biryani Variations -->
+                        <li><a class="dropdown-item" href="#">Spicy Chicken Biryani</a></li>
+                        <li><a class="dropdown-item" href="#">Hyderabadi Chicken Biryani</a></li>
+                        <li><a class="dropdown-item" href="#">Malabar Chicken Biryani</a></li>
+                      
+                        <!-- Mutton Biryani Variations -->
+                        <li><a class="dropdown-item" href="#">Awadhi Mutton Biryani</a></li>
+                        <li><a class="dropdown-item" href="#">Kolkata Mutton Biryani</a></li>
+                        <li><a class="dropdown-item" href="#">Parsi Mutton Biryani</a></li>
+                      
+                        <!-- Vegetarian Biryani Variations -->
+                        <li><a class="dropdown-item" href="#">Paneer Biryani</a></li>
+                        <li><a class="dropdown-item" href="#">Veg Pulao Biryani</a></li>
+                        <li><a class="dropdown-item" href="#">Tofu Biryani</a></li>
+                      
+                        <!-- Add more items as needed -->
+                      </ul>                      
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirm Order</button>
+                <button type="button" class="btn btn-primary">Cancel Order</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Include Bootstrap JS (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

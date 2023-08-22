@@ -11865,7 +11865,7 @@ a {
   font-weight: 700;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -11887,6 +11887,18 @@ ul {
 }
 .card-body {
   border-radius: 0;
+}
+
+textarea {
+  height: 30rem;
+}
+
+input {
+  padding: 0.5rem 0;
+}
+
+input::placeholder, textarea::placeholder {
+  color: grey;
 }
 
 .btn-custom {
@@ -11925,6 +11937,10 @@ ul {
   color: #F69431;
 }
 
+.text-color-secondary {
+  color: #5D310C;
+}
+
 /**************** CUSTOM STYLE SHEET ****************/
 .header {
   height: 90vh;
@@ -11944,6 +11960,14 @@ ul {
 
 .menu {
   background-color: #292c30;
+}
+
+.contact {
+  background: #292c30;
+}
+
+.modal p {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */
