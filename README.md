@@ -16,7 +16,7 @@ pre-made templates of UI compoents that are made using core web frontend technol
 1. [Deployment](#deployment)
 2. [Built With](#built-with)
 3. [Installation](#installation)
-4. [Authors](#authors) -
+4. [Authors](#authors)
 5. [License](#license)
 
 ## Deployment
@@ -25,9 +25,9 @@ pre-made templates of UI compoents that are made using core web frontend technol
 
 ![Biryani Beast Mobile Preview](/assets/biryani-beast__mobile-view.png)
 
-![Biryani Beast Tablet Preview](/images/biryani-beast__tablet-view.png)
+![Biryani Beast Tablet Preview](/assets/biryani-beast__tablet-view.png)
 
-![Biryani Beast Desktop Preview](/images/biryani-beast__desktop-view.png)
+![Biryani Beast Desktop Preview](/assets/biryani-beast__desktop-view.png)
 
 ## Built With
 
